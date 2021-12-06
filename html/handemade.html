@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>hand in hand</title>
+        <link rel="shortcut icon" href="../images/HandInHand.png" type="../images/HandInHand.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../bootstrab/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/handemade.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/navbar-responsive.css">
+        <link rel="stylesheet" href="../css/handmaderesponsive.css">
+        <link rel="stylesheet" href="../bootstrab/bootstrap.min.js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <style>
+
+        </style>
+        <script>
+            /*global $, alert, console*/
+
+$(".toggle").click(function () {
+    
+    'use strict';
+    
+    $(".navlist").toggleClass("show");
+
+});
+        </script>
+    </head>
+    <body>    
+        <!-- Start Navbar -->
+        <div class="navbar elem-center">
+            <div class="container">
+               <div class="parent left-right">
+                    <div class="navbar-header">   
+                      <a href="" class="navbar-brand"><img src="../images/HandInHand.png"></a>
+                                                <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
+                                                <div class="language">
+                                                       <td>
+                                <select>
+                                    <option>language</option>
+                                    
+                                    <option>عربي</option>
+                                    <option>English</option>
+                                </select>
+                            </td>
+                        </tr>
+                                                </div>
+                                        
+                    </div>
+                      <ul class="nav navlist" id="links">
+                        <li class="active">
+                         <a href="items.html" data-value="about" class="effect">Items</a></li>
+                        <li><a href="service.html" data-value="port"class="effect">Services</a></li>
+                        <li><a href="events.html" data-value="foll"class="effect">Events</a></li>
+                        <li><a href="handemade.html" data-value="cont"class="effect">Handmade</a></li>
+                      </ul>
+                        <form class="navbar-form navbar-right">
+                       <input type="text" placeholder="Search">
+                       <i class="fa fa-search"></i>
+                       </form>
+                       <div class="menu">
+                         <button class="toggl">
+                                          <ul>
+                                             <li><span></span>
+                                                 <span></span>
+                                                 <span></span>
+                                                <ul >
+                                                <li >
+                                                        <a href="items.html" data-value="about" id="link-nav" class="effect">Items</a>
+                                                        <hr id="link-nav">
+                                                        <a href="service.html" data-value="port" id="link-nav"class="effect">Services</a>
+                                                        <hr id="link-nav">
+                                                        <a href="events.html" data-value="foll" id="link-nav"class="effect">Events</a>
+                                                        <hr id="link-nav">
+                                                        <a href="handemade.html" data-value="cont" id="link-nav"class="effect">Handmade</a>
+                                                        <hr id="link-nav">
+                                                        <a href="login.html">login</a>
+                                                        <hr>
+                                                        <a href="Resister.html">Register</a>
+                                                        <hr>
+                                                        <a href="youracount.html">youracount</a>
+                                                </li>
+                                                </ul>
+                                              </li>
+                                          </ul>
+                                
+                         </button>
+                       </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
+        </div>
+        <!-- End Navbar -->
+        
+            <div class="cotainer">
+            <div class="row" >
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="handmade">
+               <div class="items">
+                  <div class="image">
+                    <img src="../images/undraw_good_team_m7uu.png"style="width: 40%;height: 100%;transform: rotatey(180deg);position: absolute;margin: 0px 10px 10px 0px;" " >
+                    <h3>HANDMADE</h3>
+                  </div>
+                   <img src="../images/path2.png"class="background1">
+                       <div class="paragrph">
+                           <p class="paragrph1">Share your handmade works in our website to get more sales from your university students.</p>
+                    </div>
+                    
+               </div>
+              </div>
+            </div>
+            </div>
+            
+            
+            
+                    <!--start fileter-->
+      <div class="filter">
+              <button><i class="fa fa-filter"></i>Filter</button>
+              <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Add</button>
+            <!-- The Modal -->
+                   <div id="myModal" class="modal"  >
+        <!-- Modal content -->
+                    <div class="content">    
+                        <span class="close" style=" font-size: 35px;color: #ff0000;">&times;</span>
+             <form class="edit-item"> 
+                           <!-- select photo -->
+                   <center  class="photo">
+                           <img id="blah" src="http://placehold.it/180" alt="your image" />
+                <div class="update-photo">
+                        <input type="file" name="file" id="file" class="inputfile" onchange="readURL(this);" />
+                            <label for="file">select photo</label>
+                 </div> 
+                   </center> 
+                               <div class="home">
+                              <label for="w3review">Description</label>
+                                  <textarea id="w3review" name="w3review" rows="3" cols="55">
+                                   </textarea>
+  
+                              <label for="w3review">TiTLe</label>
+                                  <textarea id="w3review" name="w3review" rows="2" cols="55">
+                                   </textarea>
+
+                            <label for="w3review">Phone</label>
+                                  <textarea id="w3review" name="w3review" rows="1.500" cols="55">
+                                 </textarea>
+                             <label for="w3review">facebook</label>
+                                   <textarea id="w3review" name="w3review" rows="2" cols="55">
+                                   </textarea>
+                             <label for="w3review">Price</label>
+                                   <input type="number" name="price" style="width: 430px;">
+                  <br>
+                                    <input class="submit" type="submit " value="save">
+                  </div>
+          </form>
+                   </div>
+
+                   </div>
+                   </div>
+           <!--end fileter-->
+      
+    </div>
+            
+            
+            <!--start items-->
+            <div class="cotainer"  >
+            <div class="row" >
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/6.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">50 EP</div>
+             </div>
+               </div>
+              </div>
+            
+           
+           
+           
+           
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-2"  >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/5.png">
+                </div>
+                <div class="dateils">
+                <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+           
+            
+                      
+                      
+        
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-3"   >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/3.png">
+                </div>
+                <div class="dateils">
+                  <h6 id ="name">Item Title<h6>
+                          <div class="price">60 EP</div>
+                </div>
+                 </div>
+               </div>
+       
+       
+       
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-4"   >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/1.png">
+                </div>
+                <div class="dateils">
+                   <h6 id ="name">Item Title<h6>
+                          <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+              </div>
+              </div>
+            
+            <br>
+            
+            
+            <div class="cotainer" id="marg-top">
+            <div class="row" >
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/2.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">Free</div>
+             </div>
+               </div>
+              </div>
+            
+           
+           
+           
+           
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-2"  >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/3.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+           
+            
+                      
+                      
+        
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-3" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/1.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+       
+       
+       
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-4"  >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/4.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+              </div>
+              </div>
+                       
+                 <br>
+                 
+                 
+            <div class="cotainer" id="marg-top">
+            <div class="row" >
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/5.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+            
+           
+           
+           
+           
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-2" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/6.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+           
+            
+                      
+                      
+        
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-3" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/3.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name">Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+       
+       
+       
+              <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" id="marg-left-4" >
+               <div class="items1">
+                <div class="imgbox">
+                 <img src="../images/2.png">
+                </div>
+                <div class="dateils">
+               <h6 id ="name"> Item Title<h6>
+            <div class="price">70 EP</div>
+             </div>
+               </div>
+              </div>
+              </div>
+              </div>
+            
+            
+            <!--end items-->
+           <!--start endwebsite-->
+           <div class="end">
+             <div class="imag">
+                <span class="image1"><img src="../images/f.png"></span>
+                <span class="image2"><img src="../images/f2.png"></span>
+                <span class="image3"><img src="../images/f2.png"></span>
+             </div>
+             <div class="link">
+                        <ul>
+                        <li><a href="#" class="link1">Contact us</a></li>
+                        <li><a href="#" class="link2">About Us</a></li>
+                      </ul>
+                       <div class="social">
+                            <a class="social1"><i class="fa fa-facebook-official"></i></a>
+                            <a class="social2"><i class="fa fa-twitter"></i></a>
+                            <p>All copy Rights Reserved to Student Service Zone 2019</p>
+
+                       </div>
+             </div>
+           </div>
+           <!--end endwebsite-->
+           
+           <script src="../js/jquery-1.12.4.min.js"></script>
+           <script src="../js/itemdes.js"> </script>
+    </body>
+</html>
